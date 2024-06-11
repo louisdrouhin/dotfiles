@@ -12,8 +12,16 @@ readonly ML4W_SETUP_SCRIPT_URL="https://gitlab.com/stephan-raabe/dotfiles/-/raw/
 toInstall = (
   "fish"
   "starship"
+  "tmux"
   "libqalculate"
+  "texlive-binextra"
   
+  "zathura"
+  "zathura-cb"
+  "zathura-ps"
+  "zathura-djvu"
+  "zathura-pdf-mupdf"
+
   "jetbrains-toolbox"
   "gitkraken"
   "lazygit"
