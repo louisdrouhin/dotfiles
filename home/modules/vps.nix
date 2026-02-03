@@ -4,18 +4,22 @@
   home = {
     packages = with pkgs; [
       restic
+      resticprofile
     ];
 
     file = {
+      ".config/resticprofile/profiles.toml".source = ./vps/resticprofile/profiles.toml;
+      ".config/resticprofile/.env.dist".source = ./vps/resticprofile/.env.dist;
+
       "services/scripts" = {
-        source = ./vps/scripts;
+        source = ./vps/services/scripts;
         recursive = true;
         force = true;
       };
 
-      "services/configs".source = ./vps/configs;
+      "services/configs".source = ./vps/services/configs;
 
-      "services/docker-compose.yml".source = ./vps/docker-compose.yml;
+      "services/docker-compose.yml".source = ./vps/services/docker-compose.yml;
   
       "services/secrets/.keep".text = "";
     };
