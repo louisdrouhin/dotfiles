@@ -8,9 +8,9 @@ let
     { name = "launcher"; command = "rofi -show drun -replace -i -theme ~/.config/rofi/config.rasi"; }
     { name = "files"; command = "yazi"; }
     { name = "files_gui"; command = "dotfiles-terminal -e dotfiles-files"; }
-    { name = "browser"; command = "google-chrome-stable --enable-features=TouchpadOverscrollHistoryNavigation"; }
-    { name = "mail"; command = "google-chrome-stable --app-id=jnpecgipniidlgicjocehkhajgdnjekh"; }
-    { name = "ai"; command = "google-chrome-stable --app-id=cadlkienfkclaiaibeoongdcgmdikeeg"; }
+    { name = "browser"; command = "brave"; }
+    { name = "mail"; command = ""; }
+    { name = "ai"; command = ""; }
 
     { name = "window_walker"; command = "rofi -show window -replace -i -theme ~/.config/rofi/config.rasi"; }
     { name = "clipboard_manager"; command = "cliphist list | rofi -dmenu -replace -config ~/.config/rofi/config-cliphist.rasi | cliphist decode | wl-copy"; }

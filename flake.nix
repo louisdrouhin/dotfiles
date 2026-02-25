@@ -61,6 +61,7 @@
           "hostinger" = mkHome "hostinger"  "x86_64-linux";
           "darwin"    = mkHome "darwin"     "aarch64-darwin";
           "ubuntu"    = mkHome "ubuntu"     "x86_64-linux";
+          "beta"      = mkHome "beta"       "x86_64-linux";
           "test"      = mkHome "test"       "aarch64-linux";
         };
     };

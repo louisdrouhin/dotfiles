@@ -31,8 +31,8 @@
 
       settings = {
         user = {
-          name = "ruets";
-          email = "dev@ruets.pro";
+          name = "louisdrouhin";
+          email = "louis.drouhin@gmail.com";
         };
         core.editor = "nvim";
         init = { defaultBranch = "main"; };
