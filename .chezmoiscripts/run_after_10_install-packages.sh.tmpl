@@ -24,9 +24,10 @@ echo "=== Installing Ubuntu packages with apt ==="
 sudo apt update
 
 echo "Installing packages..."
-{{ range $name, $pkg := .packages }}
-sudo apt install -y {{ $pkg }} || true
-{{ end }}
+packages=({{ range $name, $pkg := .packages }}{{ if $pkg }} "{{ $pkg }}"{{ end }}{{ end }})
+if [ ${#packages[@]} -gt 0 ]; then
+    sudo apt install -y "${packages[@]}" || true
+fi
 
 {{ else }}
 echo "=== OS not supported ==="
